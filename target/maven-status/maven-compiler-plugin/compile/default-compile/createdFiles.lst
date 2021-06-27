@@ -1,0 +1,9 @@
+pages\BasePage.class
+pages\loans\CarLoansPage.class
+constants\Constant$TimeutVeriables.class
+constants\Constant$Urls.class
+constants\Constant$MobileReplenishmentTestData.class
+constants\Constant.class
+pages\telecomunications\MobolePhoneReplanishmentPage.class
+common\CommonActions.class
+common\Config.class
