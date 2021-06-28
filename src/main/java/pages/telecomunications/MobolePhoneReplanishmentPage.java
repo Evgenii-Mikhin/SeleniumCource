@@ -23,6 +23,8 @@ public class  MobolePhoneReplanishmentPage  extends BasePage {
     private final By inputCardcvv = By.xpath("//input[@data-qa-node='cvvdebitSource']");
     private final By buttonSubmitToTheCart = By.xpath("//button[@data-qa-node='submit']");
     private final By paymentDetails = By.xpath("//span[@data-qa-node='details']");
+    private final By buttonClose = By.xpath("//button[contains(text(),'Close')]");
+
 
     /**
      *Choose a carg from the wallet
@@ -85,6 +87,7 @@ public class  MobolePhoneReplanishmentPage  extends BasePage {
      */
     public MobolePhoneReplanishmentPage checkPaymentDetailsIsPresentInTheCart(String text){
         waitElementIsVisible(driver.findElement(paymentDetails));
+        waitElementIsVisible(driver.findElement(buttonClose));
         WebElement details = driver.findElement(paymentDetails);
         Assertions.assertEquals(text, details.getText());
 
